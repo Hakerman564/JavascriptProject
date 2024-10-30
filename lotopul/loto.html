@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<style media="screen">
+  h1
+  {
+    text-align:center;
+  }
+  table,td
+  {
+    border: 3px solid black;
+  }
+
+  td.especial
+  {
+    border: 3px solid grey;
+  }
+
+  input
+  {
+    width: 50px;
+    height: 20px;
+  }
+
+  .verdoso
+  {
+    background-color:#d3f0aa;
+  }
+
+</style>
+    <meta charset="utf-8">
+    <title>loto</title>
+  </head>
+  <body>
+    <h1>Loto ++</h1>
+    <input type="button" id="M" value="listo">
+    <br />
+    <table>
+      <tr>
+        <td><input type="number" min="0" max="38"  id="bolo1" value="0"></td>
+        <td><input type="number" min="0" max="38"  id="bolo2" value="0"></td>
+        <td><input type="number" min="0" max="38"  id="bolo3" value="0"></td>
+        <td><input type="number" min="0" max="38"  id="bolo4" value="0"></td>
+        <td><input type="number" min="0" max="38"  id="bolo5" value="0"></td>
+        <td><input type="number" min="0" max="38"  id="bolo6" value="0"></td>
+        <td class="especial"><input type="number" min="0" max="9"  id="boloex1" value="0"></td>
+        <td class="especial"><input type="number" min="0" max="9"  id="boloex2" value="0"></td>
+      </tr>
+    </table>
+    <div class="local" id="coms">
+
+    </div>
+    <script type="text/javascript" src="loto.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cajero automatico</title>
+    <style media="screen">
+
+.Mato
+{
+  color: red;
+}
+
+body
+{
+  background-color: #F9F9F9;
+}
+  .Portada
+      {
+      text-align: center;
+      float: left;
+      }
+
+   .halo
+   {
+     height: 10;
+     width: 5;
+     overflow-x: auto;
+   }
+
+   .entrega
+   {
+     text-emphasis-position: above;
+   }
+
+   audio
+   {
+   display: none
+   }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="Portada">
+        <img src="cajero.gif" />
+        <audio id="audio" controls>
+        <source type="audio/mp3" src="Caja-registradora.mp3">
+        </audio>
+        <p>
+          <input type="number" id="Ctad" value ="" />
+          <input type="button" id="tudinero" value="ok" />
+        </p>
+        <br />
+      </div>
+      <div class="halo">
+        <p id = "monto"><img>
+        <p id="montoDetallado"></p>
+      </div>
+      <div class="Entrega">
+        <br>
+        <br>
+        <br>
+        <p>Entrega</p>
+        <hr>
+        <br>
+        <br>
+      </div>
+    <div class="Termino" id="resultado">
+      </div>
+    </div>
+    <script src="cajero.js"></script>
+  </body>
+</html>

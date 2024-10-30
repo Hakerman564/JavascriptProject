@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+
+     .legend
+     {color: #F7ED24}
+     .epic
+     {color: #DD30EB}
+     .raro
+     {color: #F8BB0A}
+     .normal
+     {color: #63AF1F}
+     .supernormal
+     {color: #E3F570}
+     .castigo
+     {color: #E34419}
+
+
+     .CS
+     {
+      text-align: center;
+      background-color:#FFFFFF;
+      position: absolute;
+      top: 120px;
+      left:5px;
+      width: 320px;
+      height: 520px;
+      border: 10px outset gray;
+      border-radius: 10px;
+     }
+
+     .CA
+     {
+      position: absolute;
+      left: 1px;
+      width: 1350px;
+      height: 110px;
+      top: 1px;
+      text-align: center;
+      color: #FFFFFF;
+      background-color:#36b3c3;
+      box-shadow: 3px 3px 2px black;
+     }
+
+     .RE
+     {
+      position: relative;
+      top: 710px;
+      text-align: center;
+      background-color:#FFFFFF;
+      border: 3px solid #494848;
+
+     }
+
+     .descripcion
+     {
+       background-color:#dfdfdf;
+       position: absolute;
+       width: 800px;
+       top: 320px;
+       left:15px;
+       border: 30px;
+       border-color: black;
+     }
+
+     .IN
+     {
+       text-align: center;
+       background-color:#ffffff;
+       position: absolute;
+       width: 840px;
+       height: 520px;
+       top: 120px;
+       left: 350px;
+       border: 15px outset gray;
+       border-radius: 10px;
+       box-shadow: 6px 6px 0px black;
+     }
+
+      h1 ,h2
+     {
+       font-family: cursive;
+     }
+
+     body
+     {
+      background-color:#ffffff;
+     }
+    </style>
+    <meta charset="utf-8">
+    <title>IOA Horario</title>
+  </head>
+  <body onload="Goreloj()">
+    <div class="CA" id="Cabezera">
+      <h1><strong>Hora</strong></h1>
+    </div>
+    <div class="CS" id="castigo">
+      <h2>Hora</h2>
+      <form name ="form_reloj">
+        <input type="text" name="reloj" size="10" >
+      </form>
+    </div>
+    <div class="IN" id="inicio">
+      <h2>Inicio</h2>
+      <input type="button" value="Empeza" id="go"></input>
+      <input type="button" id="quitar" value="Backspace">
+      <input type="button" id="reset" value="Borrar">
+      <input type="text" id="tiempo"  placeholder="Hora">
+        <div class="descripcion">
+            <h2>descripcion</h2>
+            <p id="des"></p>
+        </div>
+      <br />
+      <p>Entretenmiento<input id="a" type="checkbox" name="Entre" value="">
+      Estudio<input id="b" type="checkbox" name="es" value="">
+      Limpieza<input id="c" type="checkbox" name="Entre" value="">
+      Ejercicio<input id="d" type="checkbox" name="moi" value="">
+      estrabagantes<input id="e" type="checkbox" name="ron" value="">
+      Aleatorio<input id="f" type="checkbox" name="ran" value="true"></p>
+    <div class="" id="res">
+        <p>tipo</p>
+        <canvas id="canvat" width="700" height="30"></canvas>
+        <p>nivel</p>
+        <canvas id="canvar" width="700" height="30"></canvas>
+      </div>
+    </div>
+    <div class="RE" id="realsados">
+
+    </div>
+    <div class="XE" id="extras">
+
+    </div>
+    <script src="horario.js"></script>
+  </body>
+</html>
