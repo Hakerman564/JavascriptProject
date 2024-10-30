@@ -1,0 +1,4 @@
+contador de minutos tareas y organicacion entre tipos
+crear sistema de bonificacion y castigo
+sistema antiduplicado de tarea con bonificacion negativa
+descripcion activada
